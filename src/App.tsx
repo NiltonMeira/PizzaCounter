@@ -26,6 +26,9 @@ export const App = () => {
 
   return (
     <div className="flex w-screen justify-center items-center flex-col gap-10">
+      <button className="border border-white top-5 right-4 w-20 fixed" onClick={() => setPizzas(0)}>
+        Reset
+      </button>
       <h1>Pizzas: {pizzas}</h1>
       <button onClick={handlePizza} className="mx-5">
         <img src={pizza} alt="" />
