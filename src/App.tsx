@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import pizza from './assets/pizza.png';
+import pizza from './assets/sushi.png';
 
 export const App = () => {
   const [pizzas, setPizzas] = useState(0);
@@ -29,7 +29,7 @@ export const App = () => {
       <button className="border border-white top-5 right-4 w-20 fixed" onClick={() => setPizzas(0)}>
         Reset
       </button>
-      <h1>Pizzas: {pizzas}</h1>
+      <h1>Sushi: {pizzas}</h1>
       <button onClick={handlePizza} className="mx-5">
         <img src={pizza} alt="" />
       </button>
